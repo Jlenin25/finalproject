@@ -1,6 +1,6 @@
 package pe.com.finalproject.clases;
 
-public class Empleado {
+public class Cliente {
     private long codigo;
     private String nombre;
     private String apellidopaterno;
@@ -17,15 +17,15 @@ public class Empleado {
     private Distrito distrito;
     private Perfil perfil;
 
-    public Empleado() {
+    public Cliente() {
     }
 
-    public Empleado(long codigo, String nombre, String apellidopaterno,
-                    String apellidomaterno, String dni,
-                    String direccion, String telefono, String celular,
-                    String correo, String sexo, String usuario,
-                    String clave, boolean estado, Distrito distrito,
-                    Perfil perfil) {
+    public Cliente(long codigo, String nombre, String apellidopaterno,
+                   String apellidomaterno, String dni,
+                   String direccion, String telefono, String celular,
+                   String correo, String sexo, String usuario,
+                   String clave, boolean estado, Distrito distrito,
+                   Perfil perfil) {
         this.codigo = codigo;
         this.nombre = nombre;
         this.apellidopaterno = apellidopaterno;

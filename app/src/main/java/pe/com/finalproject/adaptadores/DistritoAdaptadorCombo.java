@@ -12,11 +12,13 @@ import java.util.ArrayList;
 import pe.com.finalproject.R;
 import pe.com.finalproject.clases.Distrito;
 
-public class DistritoAdaptador extends BaseAdapter {
+import java.util.ArrayList;
+
+public class DistritoAdaptadorCombo extends BaseAdapter {
     private ArrayList<Distrito> listadistrito;
     private LayoutInflater layoutInflater;
 
-    public DistritoAdaptador(Context context, ArrayList<Distrito>adistrito) {
+    public DistritoAdaptadorCombo(Context context, ArrayList<Distrito>adistrito) {
         this.listadistrito=adistrito;
         layoutInflater=LayoutInflater.from(context);
     }
@@ -39,20 +41,13 @@ public class DistritoAdaptador extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         if(convertView==null){
-            convertView=layoutInflater.inflate(R.layout.elementos_lista_distrito,parent,false);
+            convertView=layoutInflater.inflate(R.layout.elemento_combo_distrito,parent,false);
             Distrito objdistrito=(Distrito)getItem(position);
             //creamos los controles
-            TextView lstCodDis=convertView.findViewById(R.id.lblCodCli);
-            TextView lstNomDis=convertView.findViewById(R.id.lblNomCli);
-            TextView lstEstDis=convertView.findViewById(R.id.lblApepCli);
+            TextView lstNomDis=convertView.findViewById(R.id.lblCodCli);
+
             //agregamos valores a la lista
-            lstCodDis.setText(""+objdistrito.getCodigo());
             lstNomDis.setText(""+objdistrito.getNombre());
-            if(objdistrito.isEstado()){
-                lstEstDis.setText("Habilitado");
-            }else{
-                lstEstDis.setText("Deshabilitado");
-            }
         }
         return convertView;
     }

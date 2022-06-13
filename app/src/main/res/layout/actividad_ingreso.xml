@@ -15,16 +15,17 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="248dp"
-            android:layout_height="307dp"
-            android:layout_marginHorizontal="75dp"
+            android:layout_width="119dp"
+            android:layout_height="189dp"
+            android:layout_marginHorizontal="140dp"
             android:layout_marginVertical="30dp"
             app:srcCompat="@mipmap/apple_logo" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
+            android:id="@+id/txtUsu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
             android:layout_marginHorizontal="30dp"
             android:backgroundTint="#fff"
             android:ems="10"
@@ -35,7 +36,7 @@
             tools:ignore="HardcodedText" />
 
         <EditText
-            android:id="@+id/editTextTextPassword"
+            android:id="@+id/txtCla"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="30dp"
@@ -54,12 +55,12 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/btnIngresar"
                 style='?attr/materialButtonOutlinedStyle'
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal='40dp'
-                android:layout_marginTop="70dp"
+                android:layout_marginTop="100dp"
                 android:layout_weight="1"
                 android:text="Ingresar"
                 android:textColor="#0099FF"
@@ -69,12 +70,12 @@
                 tools:ignore="HardcodedText" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/btnSalir"
                 style='?attr/materialButtonOutlinedStyle'
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal='40dp'
-                android:layout_marginTop="70dp"
+                android:layout_marginTop="100dp"
                 android:layout_weight="1"
                 android:text="Salir"
                 android:textColor="@color/teal_200"

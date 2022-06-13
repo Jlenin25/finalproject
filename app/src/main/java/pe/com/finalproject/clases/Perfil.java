@@ -1,16 +1,14 @@
 package pe.com.finalproject.clases;
 
-public class Distrito {
+public class Perfil {
     private long codigo;
     private String nombre;
     private boolean estado;
 
-    //contructor
-
-    public Distrito() {
+    public Perfil() {
     }
 
-    public Distrito(long codigo, String nombre, boolean estado) {
+    public Perfil(long codigo, String nombre, boolean estado) {
         this.codigo = codigo;
         this.nombre = nombre;
         this.estado = estado;

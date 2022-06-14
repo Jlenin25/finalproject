@@ -42,9 +42,9 @@ public class DistritoAdaptador extends BaseAdapter {
             convertView=layoutInflater.inflate(R.layout.elementos_lista_distrito,parent,false);
             Distrito objdistrito=(Distrito)getItem(position);
             //creamos los controles
-            TextView lstCodDis=convertView.findViewById(R.id.lblCodCli);
-            TextView lstNomDis=convertView.findViewById(R.id.lblNomCli);
-            TextView lstEstDis=convertView.findViewById(R.id.lblApepCli);
+            TextView lstCodDis=convertView.findViewById(R.id.lblCodDis);
+            TextView lstNomDis=convertView.findViewById(R.id.lblNomDis);
+            TextView lstEstDis=convertView.findViewById(R.id.lblEstDis);
             //agregamos valores a la lista
             lstCodDis.setText(""+objdistrito.getCodigo());
             lstNomDis.setText(""+objdistrito.getNombre());

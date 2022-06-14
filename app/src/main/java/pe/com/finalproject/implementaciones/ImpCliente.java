@@ -31,28 +31,8 @@ public class ImpCliente implements ICliente {
         registrocliente =new ArrayList<>();
     }
 
-
     @Override
-    public boolean ValidarUsuario(Cliente e, Context context) {
-        objconexion = new Conexion(context, nombre, null, version);
-        database = objconexion.getWritableDatabase();
-        String[] argumento=new String[]{e.getUsuario(),e.getClave()};
-        cursor = database.rawQuery("select * from t_cliente where usucli=? and clacli=?", argumento);
-        int cont=0;
-        if (cursor.getCount() > 0) {
-            while (cursor.moveToNext()) {
-                cont++;
-            }
-        }
-        if(cont==1){
-            return true;
-        }else{
-            return false;
-        }
-    }
-
-    @Override
-    public boolean RegistrarCliente(Cliente e, Context context) {
+    public boolean RegistrarCliente(Cliente c, Context context) {
         //creamos el objeto de la conexion
         objconexion=new Conexion(context,nombre,null,version);
         //indicamos que la BD sera de escritura
@@ -61,20 +41,18 @@ public class ImpCliente implements ICliente {
             //creamos los valores
             valores=new ContentValues();
             //asignamos los valores
-            valores.put("nomcli",e.getNombre());
-            valores.put("apepcli",e.getApellidopaterno());
-            valores.put("apemcli",e.getApellidomaterno());
-            valores.put("dnicli",e.getDni());
-            valores.put("dircli",e.getDireccion());
-            valores.put("telcli",e.getTelefono());
-            valores.put("celcli",e.getCelular());
-            valores.put("corcli",e.getCorreo());
-            valores.put("sexcli",e.getSexo());
-            valores.put("usucli",e.getUsuario());
-            valores.put("clacli",e.getClave());
-            valores.put("estcli",e.isEstado());
-            valores.put("coddis",e.getDistrito().getCodigo());
-            valores.put("codper",e.getPerfil().getCodigo());
+            valores.put("nomcli",c.getNombre());
+            valores.put("apepcli",c.getApellidopaterno());
+            valores.put("apemcli",c.getApellidomaterno());
+            valores.put("dnicli",c.getDni());
+            valores.put("dircli",c.getDireccion());
+            valores.put("telcli",c.getTelefono());
+            valores.put("celcli",c.getCelular());
+            valores.put("corcli",c.getCorreo());
+            valores.put("dircli",c.getDireccion());
+            valores.put("sexcli",c.getSexo());
+            valores.put("estcli",c.isEstado());
+            valores.put("coddis",c.getDistrito().getCodigo());
             //ejecutamos la sentencia
             long res=database.insert("t_cliente",null,valores);
 
@@ -90,32 +68,28 @@ public class ImpCliente implements ICliente {
     }
 
     @Override
-    public boolean ActualizarCliente(Cliente e) {
+    public boolean ActualizarCliente(Cliente c) {
         try {
             //creamos los valores
             valores=new ContentValues();
             //asignamos los valores
-            valores.put("codcli",e.getCodigo());
-            valores.put("nomcli",e.getNombre());
-            valores.put("apepcli",e.getApellidopaterno());
-            valores.put("apemcli",e.getApellidomaterno());
-            valores.put("dnicli",e.getDni());
-            valores.put("dircli",e.getDireccion());
-            valores.put("telcli",e.getTelefono());
-            valores.put("celcli",e.getCelular());
-            valores.put("corcli",e.getCorreo());
-            valores.put("sexcli",e.getSexo());
-            valores.put("usucli",e.getUsuario());
-            valores.put("clacli",e.getClave());
-            valores.put("estcli",e.isEstado());
+            valores.put("codcli",c.getCodigo());
+            valores.put("nomcli",c.getNombre());
+            valores.put("apepcli",c.getApellidopaterno());
+            valores.put("apemcli",c.getApellidomaterno());
+            valores.put("dnicli",c.getDni());
+            valores.put("telcli",c.getTelefono());
+            valores.put("celcli",c.getCelular());
+            valores.put("corcli",c.getCorreo());
+            valores.put("dircli",c.getDireccion());
+            valores.put("sexcli",c.getSexo());
+            valores.put("estcli",c.isEstado());
 
-            Log.e("distrito",""+e.getDistrito().getCodigo());
-            Log.e("perfil",""+e.getPerfil().getCodigo());
+            Log.e("distrito",""+c.getDistrito().getCodigo());
 
-            valores.put("coddis",e.getDistrito().getCodigo());
-            valores.put("codper",e.getPerfil().getCodigo());
+            valores.put("coddis",c.getDistrito().getCodigo());
             //ejecutamos la sentencia
-            int res=(int)database.update("t_cliente",valores,"codcli="+e.getCodigo(),null);
+            int res=(int)database.update("t_cliente",valores,"codcli="+c.getCodigo(),null);
             if(res==1){
                 return true;
             }else{
@@ -128,11 +102,11 @@ public class ImpCliente implements ICliente {
     }
 
     @Override
-    public boolean EliminarCliente(Cliente e) {
+    public boolean EliminarCliente(Cliente c) {
         try {
             valores=new ContentValues();
             valores.put("estcli",0);
-            int res=(int)database.update("t_cliente",valores,"codcli="+e.getCodigo(),null);
+            int res=(int)database.update("t_cliente",valores,"codcli="+c.getCodigo(),null);
             if(res==1){
                 return true;
             }else{
@@ -153,26 +127,21 @@ public class ImpCliente implements ICliente {
         //realizamos la consulta a la tabla
         cursor=database.rawQuery(
                 "select " +
-                        "e.codcli, " +
-                        "e.nomcli, " +
-                        "e.apepcli, " +
-                        "e.apemcli, " +
-                        "e.dnicli, " +
-                        "e.dircli, " +
-                        "e.telcli, " +
-                        "e.celcli, " +
-                        "e.corcli, " +
-                        "e.sexcli, " +
-                        "e.usucli, " +
-                        "e.clacli," +
-                        "e.estcli, " +
-                        "p.codper, " +
-                        "p.nomper," +
+                        "c.codcli, " +
+                        "c.nomcli, " +
+                        "c.apepcli, " +
+                        "c.apemcli, " +
+                        "c.dnicli, " +
+                        "c.dircli, " +
+                        "c.telcli, " +
+                        "c.celcli, " +
+                        "c.corcli, " +
+                        "c.sexcli, " +
+                        "c.estcli, " +
                         "d.coddis, " +
-                        "d.nomdis from t_cliente e " +
-                        "inner join t_perfil p on e.codper=p.codper " +
-                        "inner join t_distrito d on e.coddis=d.coddis " +
-                        "where e.estcli=1",
+                        "d.nomdis from t_cliente c " +
+                        "inner join t_distrito d on c.coddis=d.coddis " +
+                        "where c.estcli=1",
 
 
                 null);
@@ -192,20 +161,14 @@ public class ImpCliente implements ICliente {
                 objcliente.setCelular(cursor.getString(7));
                 objcliente.setCorreo(cursor.getString(8));
                 objcliente.setSexo(cursor.getString(9));
-                objcliente.setUsuario(cursor.getString(10));
-                objcliente.setClave(cursor.getString(11));
-                if(cursor.getInt(12)==1){
+                if(cursor.getInt(10)==1){
                     objcliente.setEstado(true);
                 }else{
                     objcliente.setEstado(false);
                 }
 
-                objperfil.setCodigo(cursor.getInt(13));
-                objperfil.setNombre(cursor.getString(14));
-                objcliente.setPerfil(objperfil);
-
-                objdistrito.setCodigo(cursor.getInt(15));
-                objdistrito.setNombre(cursor.getString(16));
+                objdistrito.setCodigo(cursor.getInt(11));
+                objdistrito.setNombre(cursor.getString(12));
                 objcliente.setDistrito(objdistrito);
 
 

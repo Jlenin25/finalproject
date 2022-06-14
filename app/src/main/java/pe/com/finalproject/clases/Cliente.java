@@ -11,11 +11,8 @@ public class Cliente {
     private String celular;
     private String correo;
     private String sexo;
-    private String usuario;
-    private String clave;
     private boolean estado;
     private Distrito distrito;
-    private Perfil perfil;
 
     public Cliente() {
     }
@@ -23,9 +20,7 @@ public class Cliente {
     public Cliente(long codigo, String nombre, String apellidopaterno,
                    String apellidomaterno, String dni,
                    String direccion, String telefono, String celular,
-                   String correo, String sexo, String usuario,
-                   String clave, boolean estado, Distrito distrito,
-                   Perfil perfil) {
+                   String correo, String sexo, boolean estado, Distrito distrito) {
         this.codigo = codigo;
         this.nombre = nombre;
         this.apellidopaterno = apellidopaterno;
@@ -36,11 +31,8 @@ public class Cliente {
         this.celular = celular;
         this.correo = correo;
         this.sexo = sexo;
-        this.usuario = usuario;
-        this.clave = clave;
         this.estado = estado;
         this.distrito = distrito;
-        this.perfil = perfil;
     }
 
     public long getCodigo() {
@@ -123,22 +115,6 @@ public class Cliente {
         this.sexo = sexo;
     }
 
-    public String getUsuario() {
-        return usuario;
-    }
-
-    public void setUsuario(String usuario) {
-        this.usuario = usuario;
-    }
-
-    public String getClave() {
-        return clave;
-    }
-
-    public void setClave(String clave) {
-        this.clave = clave;
-    }
-
     public boolean isEstado() {
         return estado;
     }
@@ -153,13 +129,5 @@ public class Cliente {
 
     public void setDistrito(Distrito distrito) {
         this.distrito = distrito;
-    }
-
-    public Perfil getPerfil() {
-        return perfil;
-    }
-
-    public void setPerfil(Perfil perfil) {
-        this.perfil = perfil;
     }
 }

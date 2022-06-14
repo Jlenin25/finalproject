@@ -95,6 +95,22 @@ public class ActividadMenu extends AppCompatActivity {
                 ft.commit();
                 return true;
 
+            case R.id.jmiCategoria:
+                FragmentoCategoria fcategoria= new FragmentoCategoria();
+                ft=getFragmentManager().beginTransaction();
+                ft.replace(R.id.contenedor,fcategoria,null);
+                ft.addToBackStack(null);
+                ft.commit();
+                return true;
+
+            case R.id.jmiProducto:
+                FragmentoProducto fproducto= new FragmentoProducto();
+                ft=getFragmentManager().beginTransaction();
+                ft.replace(R.id.contenedor,fproducto,null);
+                ft.addToBackStack(null);
+                ft.commit();
+                return true;
+
             case R.id.jmiCerrarSesion:
                 formulario= new Intent(getApplicationContext(),ActividadIngreso.class);
                 startActivity(formulario);

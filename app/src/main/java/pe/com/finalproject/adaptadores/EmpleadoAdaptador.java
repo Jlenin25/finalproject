@@ -42,14 +42,14 @@ public class EmpleadoAdaptador extends BaseAdapter {
             convertView=layoutInflater.inflate(R.layout.elementos_lista_empleado,parent,false);
             Empleado objempleado=(Empleado) getItem(position);
             //creamos los controles
-            TextView lstCodEmp=convertView.findViewById(R.id.lblCodCli);
-            TextView lstNomEmp=convertView.findViewById(R.id.lblNomCli);
-            TextView lblApepEmp=convertView.findViewById(R.id.lblApepCli);
-            TextView lblApemEmp=convertView.findViewById(R.id.lblApemCli);
-            TextView lblDniEmp=convertView.findViewById(R.id.lblDniCli);
-            TextView lblDirEmp=convertView.findViewById(R.id.lblDirCli);
-            TextView lblDisEmp=convertView.findViewById(R.id.lblDisCli);
-            TextView lstEstEmp=convertView.findViewById(R.id.lblEstCli);
+            TextView lstCodEmp=convertView.findViewById(R.id.lblCodEmp);
+            TextView lstNomEmp=convertView.findViewById(R.id.lblNomEmp);
+            TextView lblApepEmp=convertView.findViewById(R.id.lblApepEmp);
+            TextView lblApemEmp=convertView.findViewById(R.id.lblApemEmp);
+            TextView lblDniEmp=convertView.findViewById(R.id.lblDniEmp);
+            TextView lblDirEmp=convertView.findViewById(R.id.lblDirEmp);
+            TextView lblDisEmp=convertView.findViewById(R.id.lblDisEmp);
+            TextView lstEstEmp=convertView.findViewById(R.id.lblEstEmp);
             //agregamos valores a la lista
             lstCodEmp.setText(""+objempleado.getCodigo());
             lstNomEmp.setText(""+objempleado.getNombre());

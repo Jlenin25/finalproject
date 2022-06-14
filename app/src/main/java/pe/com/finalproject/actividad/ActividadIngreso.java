@@ -79,9 +79,7 @@ public class ActividadIngreso extends AppCompatActivity {
                         objutilidad.Limpiar((ViewGroup) findViewById(R.id.frmIngreso));
                         txtUsu.requestFocus();
                     }
-
                 }
-
             }
         });
 

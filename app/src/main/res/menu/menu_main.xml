@@ -1,0 +1,38 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="pe.com.finalproject.actividad.ActividadMenu">
+    <item
+        android:id="@+id/jmiPerfil"
+        android:title="Perfil" />
+    <item
+        android:id="@+id/jmiDistrito"
+        android:orderInCategory="100"
+        android:title="Distrito"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/jmiEmpleado"
+        android:orderInCategory="101"
+        android:title="Empleado" />
+    <item
+        android:id="@+id/jmiCliente"
+        android:orderInCategory="102"
+        android:title="Cliente" />
+    <item
+        android:id="@+id/jmiCategoria"
+        android:orderInCategory="103"
+        android:title="Categoria" />
+    <item
+        android:id="@+id/jmiProducto"
+        android:orderInCategory="104"
+        android:title="Producto" />
+    <item
+        android:id="@+id/jmiCerrarSesion"
+        android:orderInCategory="105"
+        android:title="Cerrar Sesion" />
+    <item
+        android:id="@+id/jmiSalir"
+        android:orderInCategory="106"
+        android:title="Salir" />
+
+</menu>

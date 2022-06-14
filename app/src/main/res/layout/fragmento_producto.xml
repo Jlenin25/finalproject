@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frmProducto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:backgroundTint="#282A2C">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="65dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#282A2C"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/txtNompro"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:alpha="0.5"
+                android:ems="10"
+                android:hint="Nombre"
+                android:inputType="textPersonName"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="5dp"
+            android:background="#282A2C"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/txtPrecpro"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:alpha="0.7"
+                android:background="#282A2C"
+                android:ems="10"
+                android:hint="Compra"
+                android:inputType="numberDecimal"
+                android:textColor="#FBFCF8"
+                android:textColorHint="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/txtPrevpro"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:alpha="0.7"
+                android:background="#282A2C"
+                android:ems="10"
+                android:hint="Venta"
+                android:inputType="numberDecimal"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/txtCanpro"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:alpha="0.7"
+                android:background="#282A2C"
+                android:ems="10"
+                android:hint="Cantidad"
+                android:inputType="number"
+                android:textColor="#FBFCF8"
+                android:textColorHint="#FFFFFF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Categoria:"
+                android:textColor="#FBFCF8"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/cboCategoria"
+                android:layout_width="115dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="#3D4043"
+                android:textColor="#FBFCF8" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="27dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="Codigo:"
+                android:textColor="#FBFCF8"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/Codcat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:textColor="#FBFCF8"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Estado:"
+                android:textColor="#FBFCF8"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/chkEstpro"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="Habilitado"
+                android:textColor="#FBFCF8"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Codigo:"
+                android:textColor="#FBFCF8"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/lblCodpro"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="#FBFCF8"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnRegistrarpro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#4294D5"
+                android:text="Registrar" />
+
+            <Button
+                android:id="@+id/btnActualizarpro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#4294D5"
+                android:text="Actualizar" />
+
+            <Button
+                android:id="@+id/btnEliminarpro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#DE7486"
+                android:text="Eliminar" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lstPro"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:paddingTop="16dp"
+        android:text="Mantenimiento Producto"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="#FBFCF8"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

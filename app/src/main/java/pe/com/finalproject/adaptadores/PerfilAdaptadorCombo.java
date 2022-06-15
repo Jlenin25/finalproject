@@ -39,10 +39,10 @@ public class PerfilAdaptadorCombo extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         if(convertView==null){
-            convertView=layoutInflater.inflate(R.layout.elemento_combo_distrito,parent,false);
+            convertView=layoutInflater.inflate(R.layout.elemento_combo_perfil,parent,false);
             Perfil objperfil=(Perfil)getItem(position);
             //creamos los controles
-            TextView lstNomPer=convertView.findViewById(R.id.lblCodCli);
+            TextView lstNomPer=convertView.findViewById(R.id.lblCodPer);
             lstNomPer.setText(""+objperfil.getNombre());
         }
         return convertView;

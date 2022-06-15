@@ -44,7 +44,7 @@ public class DistritoAdaptadorCombo extends BaseAdapter {
             convertView=layoutInflater.inflate(R.layout.elemento_combo_distrito,parent,false);
             Distrito objdistrito=(Distrito)getItem(position);
             //creamos los controles
-            TextView lstNomDis=convertView.findViewById(R.id.lblCodCli);
+            TextView lstNomDis=convertView.findViewById(R.id.lblCodDis);
 
             //agregamos valores a la lista
             lstNomDis.setText(""+objdistrito.getNombre());

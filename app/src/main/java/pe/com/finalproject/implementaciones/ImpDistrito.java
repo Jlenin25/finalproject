@@ -74,7 +74,7 @@ public class ImpDistrito implements IDistrito {
             valores.put("nomdis",d.getNombre());
             valores.put("estdis",d.isEstado());
             //ejecutamos la sentencia
-            int res=(int)database.update("t_distrito",valores,"codis="+d.getCodigo(),null);
+            int res=(int)database.update("t_distrito",valores,"coddis="+d.getCodigo(),null);
             if(res==1){
                 return true;
             }else{

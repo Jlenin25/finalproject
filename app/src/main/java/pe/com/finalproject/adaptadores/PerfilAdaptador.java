@@ -42,9 +42,9 @@ public class PerfilAdaptador extends BaseAdapter {
             convertView=layoutInflater.inflate(R.layout.elementos_lista_perfil,parent,false);
             Perfil objperfil=(Perfil)getItem(position);
             //creamos los controles
-            TextView lstCodPer=convertView.findViewById(R.id.lblCodCli);
-            TextView lstNomPer=convertView.findViewById(R.id.lblNomCli);
-            TextView lstEstPer=convertView.findViewById(R.id.lblApepCli);
+            TextView lstCodPer=convertView.findViewById(R.id.lblCodPer);
+            TextView lstNomPer=convertView.findViewById(R.id.lblNomPer);
+            TextView lstEstPer=convertView.findViewById(R.id.lblEstPer);
             //agregamos valores a la lista
             lstCodPer.setText(""+objperfil.getCodigo());
             lstNomPer.setText(""+objperfil.getNombre());

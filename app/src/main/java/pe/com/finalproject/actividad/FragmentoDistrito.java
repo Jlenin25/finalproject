@@ -3,7 +3,6 @@ package pe.com.finalproject.actividad;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -61,13 +60,13 @@ public class FragmentoDistrito extends Fragment {
         final View raiz = inflater.inflate(R.layout.fragmento_distrito, container, false);
 
         //creamos los controles
-        txtNomdis = raiz.findViewById(R.id.txtNomPer);
-        chkEstdis = raiz.findViewById(R.id.chkEstper);
-        lblCoddis = raiz.findViewById(R.id.lblCodper);
-        btnRegistrardis = raiz.findViewById(R.id.btnRegistrarper);
-        btnActualizardis = raiz.findViewById(R.id.btnActualizarper);
-        btnEliminardis = raiz.findViewById(R.id.btnEliminarper);
-        lstDis = raiz.findViewById(R.id.lstPer);
+        txtNomdis = raiz.findViewById(R.id.txtNomdis);
+        chkEstdis = raiz.findViewById(R.id.chkEstdis);
+        lblCoddis = raiz.findViewById(R.id.lblCoddis);
+        btnRegistrardis = raiz.findViewById(R.id.btnRegistrardis);
+        btnActualizardis = raiz.findViewById(R.id.btnActualizardis);
+        btnEliminardis = raiz.findViewById(R.id.btnEliminardis);
+        lstDis = raiz.findViewById(R.id.lstDis);
 
         //creamos el Arraylist Distrito
         registrodistrito = new ArrayList<>();
@@ -159,7 +158,7 @@ public class FragmentoDistrito extends Fragment {
                         fila = -1;
                     } else {
                         objutilidad.MensajeToast(raiz.getContext(), "No se actualizo el distrito");
-                        objutilidad.Limpiar((ViewGroup) raiz.findViewById(R.id.frmPerfil));
+                        objutilidad.Limpiar((ViewGroup) raiz.findViewById(R.id.txtNomPer));
                     }
 
                 } else {

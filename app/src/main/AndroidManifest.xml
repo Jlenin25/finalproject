@@ -22,8 +22,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".actividad.MainActivity"
-            android:exported="true" >
+            android:name=".actividad.ActividadMenu"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
         </activity>
     </application>
 

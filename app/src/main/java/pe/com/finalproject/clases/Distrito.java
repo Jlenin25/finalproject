@@ -1,8 +1,18 @@
 package pe.com.finalproject.clases;
 
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
 public class Distrito {
+
+    @SerializedName("codigo")
+    @Expose
     private long codigo;
+    @SerializedName("nombre")
+    @Expose
     private String nombre;
+    @SerializedName("estado")
+    @Expose
     private boolean estado;
 
     //contructor

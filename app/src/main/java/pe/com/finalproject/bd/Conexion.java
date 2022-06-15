@@ -6,11 +6,11 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import androidx.annotation.Nullable;
 
-public class Conexion {
+public class Conexion extends SQLiteOpenHelper{
     //creamos una variable para la conexion
     private SQLiteDatabase xcon;
     //creamos variables para las tablas
-    private String t_perfil, t_distrito,t_empleado, t_cliente;
+    private String t_perfil, t_distrito,t_empleado, t_cliente, t_categoria, t_producto;
 
     public Conexion(@Nullable Context context, @Nullable String name,
                     @Nullable SQLiteDatabase.CursorFactory factory,
@@ -40,16 +40,12 @@ public class Conexion {
                 "apemcli text NOT NULL," +
                 "dnicli text NOT NULL," +
                 "telcli text NOT NULL," +
-                "dircli text NOT NULL," +
                 "celcli text NOT NULL," +
                 "corcli text NOT NULL," +
+                "dircli text NOT NULL,"+
                 "sexcli text NOT NULL," +
-                "usucli text NOT NULL," +
-                "clacli text NOT NULL," +
                 "estcli INTEGER NOT NULL," +
-                "codper INTEGER NOT NULL," +
                 "coddis INTEGER NOT NULL," +
-                "foreign key (codper) references t_perfil(codper)," +
                 "foreign key (coddis) references t_distrito(coddis))";
 
         t_empleado="CREATE TABLE t_empleado(" +
@@ -71,7 +67,20 @@ public class Conexion {
                 "foreign key (codper) references t_perfil(codper)," +
                 "foreign key (coddis) references t_distrito(coddis)"+
                 ")";
+        t_categoria="CREATE TABLE t_categoria(" +
+                "codcat INTEGER PRIMARY KEY AUTOINCREMENT," +
+                "nomcat text NOT NULL," +
+                "estcat integer NOT NULL)";
 
+        t_producto="CREATE TABLE t_producto(" +
+                "codpro INTEGER PRIMARY KEY AUTOINCREMENT," +
+                "nompro text NOT NULL," +
+                "precpro text NOT NULL," +
+                "prevpro text NOT NULL," +
+                "canpro text NOT NULL," +
+                "estpro INTEGER NOT NULL," +
+                "codcat INTEGER NOT NULL," +
+                "foreign key (codcat) references t_categoria(codcat))";
 
 
         //ejecutamos las tablas
@@ -79,6 +88,8 @@ public class Conexion {
         db.execSQL(t_distrito);
         db.execSQL(t_cliente);
         db.execSQL(t_empleado);
+        db.execSQL(t_categoria);
+        db.execSQL(t_producto);
 
         db.execSQL("insert into t_distrito(nomdis,estdis) values('Cercado de Lima',1)");
         db.execSQL("insert into t_distrito(nomdis,estdis) values('Breña',1)");
@@ -93,7 +104,23 @@ public class Conexion {
                         "coddis,codper) values('Jose Daniel','Osorio', " +
                         "'Morales','78963214','Calle Union 471'," +
                         "'2462119','999666333','josorio@gmail.com'," +
-                        "'masculino','josorio','123456',1,2,1)");
+                        "'masculino','admin','123',1,2,1)");
+        db.execSQL(
+                "insert into t_cliente(nomcli, apepcli," +
+                        "apemcli,dnicli,telcli,celcli," +
+                        "corcli,dircli,sexcli, estcli," +
+                        "coddis) values('Daniel Alberto','Sanchez', " +
+                        "'Castro','87654321'," +
+                        "'5463217','987612345','dansanchez@gmail.com','Calle San Jose 44'," +
+                        "'masculino',1,1)");
+        db.execSQL("insert into t_categoria(nomcat,estcat) values('Computo',1)");
+        db.execSQL("insert into t_categoria(nomcat,estcat) values('Limpieza',1)");
+        db.execSQL(
+                "insert into t_producto(nompro, precpro," +
+                        "prevpro,canpro,estpro,codcat)" +
+                        "values('Laptop Intel','188', " +
+                        "'229','15',1,1)");
+
     }
 
     @Override
@@ -102,6 +129,8 @@ public class Conexion {
         db.execSQL("drop table if exists t_distrito");
         db.execSQL("drop table if exists t_empleado");
         db.execSQL("drop table if exists t_cliente");
+        db.execSQL("drop table if exists t_categoria");
+        db.execSQL("drop table if exists t_producto");
 
     }
 }

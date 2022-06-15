@@ -3,12 +3,61 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+<<<<<<< HEAD
         <entry key="..\:/Users/Jlenin/Desktop/android/finalproject/app/src/main/res/layout/actividad_ingreso.xml" value="0.25" />
         <entry key="..\:/Users/Jlenin/Desktop/android/finalproject/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/Jlenin/Desktop/android/finalproject/app/src/main/res/layout/content_main.xml" value="0.31680205215904234" />
         <entry key="..\:/Users/Jlenin/Desktop/android/finalproject/app/src/main/res/layout/elemento_combo_distrito.xml" value="0.31680205215904234" />
         <entry key="..\:/Users/Jlenin/Desktop/android/finalproject/app/src/main/res/layout/fragmento_bienvenida.xml" value="0.25" />
         <entry key="..\:/Users/Jlenin/Desktop/android/finalproject/app/src/main/res/layout/fragmento_perfil.xml" value="0.25" />
+=======
+        <entry key="..\:/Users/Jlenin/Desktop/android/finalproject/app/src/main/res/layout/actividad_ingreso.xml" value="0.33" />
+        <entry key="..\:/Users/Jlenin/Desktop/android/finalproject/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/Rodrigo/Desktop/Android Studio/finalproject/app/src/main/res/layout/actividad_ingreso.xml" value="0.1" />
+        <entry key="..\:/Users/Rodrigo/Desktop/Android Studio/finalproject/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Rodrigo/Desktop/Android Studio/finalproject/app/src/main/res/layout/content_main.xml" value="0.22083333333333333" />
+        <entry key="..\:/Users/Rodrigo/Desktop/Android Studio/finalproject/app/src/main/res/layout/elementos_lista_categoria.xml" value="0.22083333333333333" />
+        <entry key="..\:/Users/Rodrigo/Desktop/Android Studio/finalproject/app/src/main/res/layout/elementos_lista_cliente.xml" value="0.1" />
+        <entry key="..\:/Users/Rodrigo/Desktop/Android Studio/finalproject/app/src/main/res/layout/elementos_lista_menu.xml" value="0.1" />
+        <entry key="..\:/Users/Rodrigo/Desktop/Android Studio/finalproject/app/src/main/res/layout/elementos_lista_producto.xml" value="0.1" />
+        <entry key="..\:/Users/Rodrigo/Desktop/Android Studio/finalproject/app/src/main/res/layout/elementos_lista_submenu.xml" value="0.1" />
+        <entry key="..\:/Users/Rodrigo/Desktop/Android Studio/finalproject/app/src/main/res/layout/fragmento_bienvenida.xml" value="0.1" />
+        <entry key="..\:/Users/Rodrigo/Desktop/Android Studio/finalproject/app/src/main/res/layout/fragmento_categoria.xml" value="0.22083333333333333" />
+        <entry key="..\:/Users/Rodrigo/Desktop/Android Studio/finalproject/app/src/main/res/layout/fragmento_cliente.xml" value="0.22083333333333333" />
+        <entry key="..\:/Users/Rodrigo/Desktop/Android Studio/finalproject/app/src/main/res/layout/fragmento_distrito.xml" value="0.33" />
+        <entry key="..\:/Users/Rodrigo/Desktop/Android Studio/finalproject/app/src/main/res/layout/fragmento_empleado.xml" value="0.25" />
+        <entry key="..\:/Users/Rodrigo/Desktop/Android Studio/finalproject/app/src/main/res/layout/fragmento_menu.xml" value="0.25" />
+        <entry key="..\:/Users/Rodrigo/Desktop/Android Studio/finalproject/app/src/main/res/layout/fragmento_perfil.xml" value="0.22" />
+        <entry key="..\:/Users/Rodrigo/Desktop/Android Studio/finalproject/app/src/main/res/layout/fragmento_producto.xml" value="0.33" />
+        <entry key="..\:/Users/Rodrigo/Desktop/Android Studio/finalproject/app/src/main/res/layout/fragmento_submenu.xml" value="0.1" />
+        <entry key="..\:/Users/Rodrigo/Desktop/finalproject/app/src/main/res/layout/fragmento_cliente.xml" value="0.25" />
+        <entry key="..\:/Users/Rodrigo/Desktop/finalproject/app/src/main/res/layout/fragmento_empleado.xml" value="0.225" />
+        <entry key="..\:/Users/Rodrigo/Documents/GitHub/finalproject/app/src/main/res/layout/actividad_ingreso.xml" value="0.225" />
+        <entry key="..\:/Users/Rodrigo/Documents/GitHub/finalproject/app/src/main/res/layout/activity_main.xml" value="0.225" />
+        <entry key="..\:/Users/Rodrigo/Documents/GitHub/finalproject/app/src/main/res/layout/content_main.xml" value="0.16796875" />
+        <entry key="..\:/Users/Rodrigo/Documents/GitHub/finalproject/app/src/main/res/layout/elemento_combo_categoria.xml" value="0.22395833333333334" />
+        <entry key="..\:/Users/Rodrigo/Documents/GitHub/finalproject/app/src/main/res/layout/elemento_combo_distrito.xml" value="0.1" />
+        <entry key="..\:/Users/Rodrigo/Documents/GitHub/finalproject/app/src/main/res/layout/elemento_combo_perfil.xml" value="0.1" />
+        <entry key="..\:/Users/Rodrigo/Documents/GitHub/finalproject/app/src/main/res/layout/elementos_lista_categoria.xml" value="0.22395833333333334" />
+        <entry key="..\:/Users/Rodrigo/Documents/GitHub/finalproject/app/src/main/res/layout/elementos_lista_cliente.xml" value="0.28278041074249605" />
+        <entry key="..\:/Users/Rodrigo/Documents/GitHub/finalproject/app/src/main/res/layout/elementos_lista_distrito.xml" value="0.1" />
+        <entry key="..\:/Users/Rodrigo/Documents/GitHub/finalproject/app/src/main/res/layout/elementos_lista_empleado.xml" value="0.1" />
+        <entry key="..\:/Users/Rodrigo/Documents/GitHub/finalproject/app/src/main/res/layout/elementos_lista_menu.xml" value="0.33" />
+        <entry key="..\:/Users/Rodrigo/Documents/GitHub/finalproject/app/src/main/res/layout/elementos_lista_perfil.xml" value="0.1" />
+        <entry key="..\:/Users/Rodrigo/Documents/GitHub/finalproject/app/src/main/res/layout/elementos_lista_producto.xml" value="0.225" />
+        <entry key="..\:/Users/Rodrigo/Documents/GitHub/finalproject/app/src/main/res/layout/elementos_lista_submenu.xml" value="0.225" />
+        <entry key="..\:/Users/Rodrigo/Documents/GitHub/finalproject/app/src/main/res/layout/fragmento_bienvenida.xml" value="0.22395833333333334" />
+        <entry key="..\:/Users/Rodrigo/Documents/GitHub/finalproject/app/src/main/res/layout/fragmento_categoria.xml" value="0.22395833333333334" />
+        <entry key="..\:/Users/Rodrigo/Documents/GitHub/finalproject/app/src/main/res/layout/fragmento_cliente.xml" value="0.22" />
+        <entry key="..\:/Users/Rodrigo/Documents/GitHub/finalproject/app/src/main/res/layout/fragmento_distrito.xml" value="0.25" />
+        <entry key="..\:/Users/Rodrigo/Documents/GitHub/finalproject/app/src/main/res/layout/fragmento_empleado.xml" value="0.1" />
+        <entry key="..\:/Users/Rodrigo/Documents/GitHub/finalproject/app/src/main/res/layout/fragmento_menu.xml" value="0.1" />
+        <entry key="..\:/Users/Rodrigo/Documents/GitHub/finalproject/app/src/main/res/layout/fragmento_perfil.xml" value="0.18376068376068377" />
+        <entry key="..\:/Users/Rodrigo/Documents/GitHub/finalproject/app/src/main/res/layout/fragmento_producto.xml" value="0.1" />
+        <entry key="..\:/Users/Rodrigo/Documents/GitHub/finalproject/app/src/main/res/layout/fragmento_submenu.xml" value="0.1" />
+        <entry key="..\:/Users/Rodrigo/Documents/GitHub/finalproject/app/src/main/res/layout/freagmento_empleado.xml" value="0.22395833333333334" />
+        <entry key="..\:/Users/Rodrigo/Documents/GitHub/finalproject/app/src/main/res/menu/menu_main.xml" value="0.1" />
+>>>>>>> 32ccd322d6e04a03503cb2f3f56e3b2d434e33f8
       </map>
     </option>
   </component>

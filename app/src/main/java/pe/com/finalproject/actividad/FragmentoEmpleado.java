@@ -1,5 +1,6 @@
 package pe.com.finalproject.actividad;
 
+import android.app.Fragment;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,8 +15,6 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
-
-import androidx.fragment.app.Fragment;
 
 import java.util.ArrayList;
 

@@ -105,7 +105,7 @@ public class FragmentoPerfil extends Fragment {
                     res=perfiles.RegistrarPerfil(objperfil, raiz.getContext());
                     if(res){
                         objutilidad.MensajeToast(raiz.getContext(), "Se registro el perfil");
-                        objutilidad.Limpiar((ViewGroup) raiz.findViewById(R.id.frmPerfil));
+                        objutilidad.Limpiar((ViewGroup) raiz.findViewById(R.id.txtNomPer));
                         FragmentoPerfil fperfil=new FragmentoPerfil();
                         ft= getFragmentManager().beginTransaction();
                         ft.replace(R.id.contenedor,fperfil,null);
@@ -113,7 +113,7 @@ public class FragmentoPerfil extends Fragment {
                         ft.commit();
                     }else{
                         objutilidad.MensajeToast(raiz.getContext(), "No se registro el perfil");
-                        objutilidad.Limpiar((ViewGroup) raiz.findViewById(R.id.frmPerfil));
+                        objutilidad.Limpiar((ViewGroup) raiz.findViewById(R.id.txtNomPer));
                     }
                 }
 
@@ -151,7 +151,7 @@ public class FragmentoPerfil extends Fragment {
                     objperfil.setEstado(est);
                     res=perfiles.ActualizarPerfil(objperfil);
                     if(res==true){
-                        objutilidad.Limpiar((ViewGroup)raiz.findViewById(R.id.frmPerfil));
+                        objutilidad.Limpiar((ViewGroup)raiz.findViewById(R.id.txtNomPer));
                         objutilidad.MensajeToast(raiz.getContext(), "Se actualizo el perfil");
                         perfilAdaptador.notifyDataSetChanged();
                         lstPer.setAdapter(perfilAdaptador);
@@ -163,7 +163,7 @@ public class FragmentoPerfil extends Fragment {
                         fila=-1;
                     }else{
                         objutilidad.MensajeToast(raiz.getContext(), "No se actualizo el perfil");
-                        objutilidad.Limpiar((ViewGroup) raiz.findViewById(R.id.frmPerfil));
+                        objutilidad.Limpiar((ViewGroup) raiz.findViewById(R.id.txtNomPer));
                     }
 
                 }else{
@@ -182,7 +182,7 @@ public class FragmentoPerfil extends Fragment {
                     objperfil.setCodigo(cod);
                     res=perfiles.EliminarPerfil(objperfil);
                     if(res==true){
-                        objutilidad.Limpiar((ViewGroup)raiz.findViewById(R.id.frmPerfil));
+                        objutilidad.Limpiar((ViewGroup)raiz.findViewById(R.id.txtNomPer));
                         objutilidad.MensajeToast(raiz.getContext(), "Se elimino el perfil");
                         perfilAdaptador.notifyDataSetChanged();
                         lstPer.setAdapter(perfilAdaptador);
@@ -194,7 +194,7 @@ public class FragmentoPerfil extends Fragment {
                         fila=-1;
                     }else{
                         objutilidad.MensajeToast(raiz.getContext(), "No se elimino el perfil");
-                        objutilidad.Limpiar((ViewGroup) raiz.findViewById(R.id.frmPerfil));
+                        objutilidad.Limpiar((ViewGroup) raiz.findViewById(R.id.txtNomPer));
                     }
 
                 }else{

@@ -7,8 +7,8 @@
 
     <fragment
         android:id="@+id/FragmentoDistrito"
-        android:name="pe.com.laboratorio01.actividades.FragmentoDistrito"
-        android:label="@string/first_fragment_label"
+        android:name="pe.com.finalproject.actividad.FragmentoDistrito"
+        android:label="First Fragment"
         tools:layout="@layout/fragmento_distrito">
 
         <action
@@ -17,8 +17,8 @@
     </fragment>
     <fragment
         android:id="@+id/FragmentoBienvenida"
-        android:name="pe.com.laboratorio01.actividades.FragmentoBienvenida"
-        android:label="@string/second_fragment_label"
+        android:name="pe.com.finalproject.actividad.FragmentoBienvenida"
+        android:label="Bienvenida"
         tools:layout="@layout/fragmento_bienvenida">
 
         <action

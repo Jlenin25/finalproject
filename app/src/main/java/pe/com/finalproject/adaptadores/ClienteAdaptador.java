@@ -47,6 +47,9 @@ public class ClienteAdaptador extends BaseAdapter {
             TextView lblApepCli =convertView.findViewById(R.id.lblApepCli);
             TextView lblApemCli =convertView.findViewById(R.id.lblApemCli);
             TextView lblDniCli =convertView.findViewById(R.id.lblDniCli);
+            TextView lblTelCli =convertView.findViewById(R.id.lblTelCli);
+            TextView lblCelCli =convertView.findViewById(R.id.lblCelCli);
+            TextView lblCorCli =convertView.findViewById(R.id.lblCorCli);
             TextView lblDirCli =convertView.findViewById(R.id.lblDirCli);
             TextView lblDisCli =convertView.findViewById(R.id.lblDisCli);
             TextView lstEstCli =convertView.findViewById(R.id.lblEstCli);
@@ -56,6 +59,9 @@ public class ClienteAdaptador extends BaseAdapter {
             lblApepCli.setText(""+ objcliente.getApellidopaterno());
             lblApemCli.setText(""+ objcliente.getApellidomaterno());
             lblDniCli.setText(""+ objcliente.getDni());
+            lblTelCli.setText(""+ objcliente.getTelefono());
+            lblCelCli.setText(""+ objcliente.getCelular());
+            lblCorCli.setText(""+ objcliente.getCorreo());
             lblDirCli.setText(""+ objcliente.getDireccion());
             lblDisCli.setText(""+ objcliente.getDistrito().getNombre());
             if(objcliente.isEstado()){

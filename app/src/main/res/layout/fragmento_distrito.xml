@@ -5,7 +5,7 @@
     android:id="@+id/frmDistrito"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#282A2C">
+    android:background="#0B0B0B">
 
     <CheckBox
         android:id="@+id/chkEstdis"
@@ -18,6 +18,7 @@
         android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@+id/textView2"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
     <LinearLayout
         android:layout_width="172dp"
         android:layout_height="42dp"
@@ -45,6 +46,7 @@
             android:textColor="#FBFCF8"
             android:textSize="16sp" />
     </LinearLayout>
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -161,6 +163,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
     </LinearLayout>
+
     <TextView
         android:id="@+id/textView6"
         android:layout_width="0dp"
@@ -168,8 +171,8 @@
         android:paddingTop="16dp"
         android:text="Mantenimiento Distrito"
         android:textAlignment="center"
-        android:textSize="20sp"
         android:textColor="#FBFCF8"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -6,19 +6,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    android:backgroundTint="#282A2C">
+    android:backgroundTint="#0B0B0B">
+
     <LinearLayout
+        android:id="@+id/linearLayout4"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="65dp"
         android:orientation="vertical"
-        android:id="@+id/linearLayout4"
         app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="48dp"
-            android:background="#282A2C"
+            android:background="#0B0B0B"
             android:orientation="horizontal">
 
             <EditText
@@ -30,6 +31,7 @@
                 android:ems="10"
                 android:hint="Nombres"
                 android:inputType="textPersonName"
+                android:textColor="#FFF"
                 android:textColorHint="#FFFFFF" />
         </LinearLayout>
 
@@ -37,7 +39,7 @@
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_marginTop="5dp"
-            android:background="#282A2C"
+            android:background="#0B0B0B"
             android:orientation="horizontal">
 
             <EditText
@@ -49,6 +51,7 @@
                 android:ems="10"
                 android:hint="Apellido Paterno"
                 android:inputType="textPersonName"
+                android:textColor="#FFF"
                 android:textColorHint="#FFFFFF" />
 
             <EditText
@@ -60,6 +63,7 @@
                 android:ems="10"
                 android:hint="Apellido Materno"
                 android:inputType="textPersonName"
+                android:textColor="#FFF"
                 android:textColorHint="#FFFFFF" />
         </LinearLayout>
 
@@ -67,7 +71,7 @@
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_marginTop="5dp"
-            android:background="#282A2C"
+            android:background="#0B0B0B"
             android:orientation="horizontal">
 
             <EditText
@@ -79,6 +83,7 @@
                 android:ems="10"
                 android:hint="DNI"
                 android:inputType="number"
+                android:textColor="#FFF"
                 android:textColorHint="#FFFFFF" />
 
             <EditText
@@ -90,6 +95,7 @@
                 android:ems="10"
                 android:hint="Telefono"
                 android:inputType="phone"
+                android:textColor="#FFF"
                 android:textColorHint="#FFFFFF" />
 
             <EditText
@@ -101,6 +107,7 @@
                 android:ems="10"
                 android:hint="Celular"
                 android:inputType="phone"
+                android:textColor="#FFF"
                 android:textColorHint="#FFFFFF" />
 
         </LinearLayout>
@@ -109,7 +116,7 @@
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_marginTop="5dp"
-            android:background="#282A2C"
+            android:background="#0B0B0B"
             android:orientation="horizontal">
 
             <EditText
@@ -120,6 +127,7 @@
                 android:ems="10"
                 android:hint="Correo"
                 android:inputType="textEmailAddress"
+                android:textColor="#FFF"
                 android:textColorHint="#FFFFFF" />
         </LinearLayout>
 
@@ -127,7 +135,7 @@
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_marginTop="5dp"
-            android:background="#282A2C"
+            android:background="#0B0B0B"
             android:orientation="horizontal">
 
             <EditText
@@ -138,6 +146,7 @@
                 android:ems="10"
                 android:hint="Direccion"
                 android:inputType="textPersonName"
+                android:textColor="#FFF"
                 android:textColorHint="#FFFFFF" />
         </LinearLayout>
 
@@ -234,7 +243,7 @@
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_marginTop="5dp"
-            android:background="#282A2C"
+            android:background="#0B0B0B"
             android:orientation="horizontal">
 
             <EditText
@@ -246,6 +255,7 @@
                 android:ems="10"
                 android:hint="Usuario"
                 android:inputType="textPersonName"
+                android:textColor="#FFF"
                 android:textColorHint="#FFFFFF" />
 
             <EditText
@@ -257,6 +267,7 @@
                 android:ems="10"
                 android:hint="Clave"
                 android:inputType="textPersonName"
+                android:textColor="#FFF"
                 android:textColorHint="#FFFFFF" />
         </LinearLayout>
 
@@ -358,6 +369,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
     </LinearLayout>
+
     <TextView
         android:id="@+id/textView6"
         android:layout_width="0dp"
@@ -365,8 +377,8 @@
         android:paddingTop="16dp"
         android:text="Mantenimiento Empleado"
         android:textAlignment="center"
-        android:textSize="20sp"
         android:textColor="#FBFCF8"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

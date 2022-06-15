@@ -69,18 +69,20 @@
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:orientation="horizontal">
+
             <Button
                 android:id="@+id/btnRegistrarper"
                 style='?attr/materialButtonOutlinedStyle'
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal='10dp'
                 android:layout_weight="1"
-                android:layout_marginHorizontal="10dp"
-                android:text="Ingresar"
+                android:text="Registrar"
                 android:textColor="#2196F3"
                 android:textStyle="bold"
-                app:cornerRadius="50dp"
-                app:strokeColor="#2196F3" />
+                app:cornerRadius='50dp'
+                app:strokeColor='#2196F3'
+                tools:ignore="HardcodedText" />
 
             <Button
                 android:id="@+id/btnActualizarper"
@@ -88,7 +90,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="10dp"
-                android:text="Ingresar"
+                android:text="Actualizar"
                 android:textColor="#21EA53"
                 android:textStyle="bold"
                 app:cornerRadius="50dp"
@@ -100,7 +102,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="10dp"
-                android:text="Ingresar"
+                android:text="Eliminar"
                 android:textColor="#FF0000"
                 android:textStyle="bold"
                 app:cornerRadius="50dp"

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    android:backgroundTint="#282A2C">
+    android:backgroundTint="#0B0B0B">
 
 
     <LinearLayout
@@ -151,6 +151,7 @@
                 android:text="Habilitado"
                 android:textColor="#FBFCF8"
                 android:textSize="16sp" />
+
             <TextView
                 android:id="@+id/textView9"
                 android:layout_width="3dp"
@@ -212,8 +213,8 @@
         android:paddingTop="16dp"
         android:text="Mantenimiento Producto"
         android:textAlignment="center"
-        android:textSize="20sp"
         android:textColor="#FBFCF8"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
